@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-hook-relay",
+    "description": "Resilient SaaS webhook listener handling signature verification, idempotency checks, and background queue retries.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\HookRelay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\HookRelay\\PackageServiceProvider"
+            ]
+        }
+    }
+}
